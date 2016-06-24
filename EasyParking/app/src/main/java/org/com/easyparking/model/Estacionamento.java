@@ -1,5 +1,7 @@
 package org.com.easyparking.model;
 
+import java.util.List;
+
 /**
  * Created by MarioJr on 22/06/2016.
  */
@@ -9,6 +11,7 @@ public class Estacionamento {
     private String cnpj;
     private Double valor;
     private String endereco;
+    private List<Tarifa> listTarifas;
 
     public String getNome() {
         return nome;
@@ -26,6 +29,10 @@ public class Estacionamento {
         return endereco;
     }
 
+    public List<Tarifa> getListTarifas() {
+        return listTarifas;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -40,5 +47,9 @@ public class Estacionamento {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public void setListTarifas(List<Tarifa> listTarifas) {
+        this.listTarifas = listTarifas;
     }
 }

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    tools:context="org.com.easyparking.MainActivity"
+    android:id="@+id/frameLogin">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <RelativeLayout
+        android:layout_width="303dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/relativeLogin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/abc_background_cache_hint_selector_material_dark"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="147dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Login"
+                android:id="@+id/textView"
+                android:layout_above="@+id/textUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textUsuario"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/textSenha"
+                android:layout_alignEnd="@+id/textSenha"
+                android:layout_alignLeft="@+id/textSenha"
+                android:layout_alignStart="@+id/textSenha"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Senha"
+                android:id="@+id/textView2"
+                android:layout_alignBaseline="@+id/textSenha"
+                android:layout_alignBottom="@+id/textSenha"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/textSenha"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:layout_below="@+id/textUsuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_weight="0.14" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnEntrar"
+                android:id="@+id/btnEntrar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

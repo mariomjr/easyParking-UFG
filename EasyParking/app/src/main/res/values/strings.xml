@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EasyParking</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="error_connection">Sem conexão</string>
+    <string name="error_request">Erro na requisição</string>
+    <string name="label_error_invalid_response">Resposta inválida do servidor</string>
+</resources>
